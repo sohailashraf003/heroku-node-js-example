@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+mkdir -p ./public/assets
+rm -rf ./public/assets/bootstrap
+cp -r ./node_modules/bootstrap/dist ./public/assets/bootstrap
+rm -rf ./public/assets/jquery
+cp -r ./node_modules/jquery/dist ./public/assets/jquery

@@ -3,10 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>SparkPost Heroku Node.js Example</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
   </head>
   <body>
-    <p>
-      Hello
-    </p>
+    <div class="container">
+
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <h1>Heroku Node.js Example</h1>
+        <p class="lead">Send a test message using this example app.</p>
+
+        <form id="frm-send-message">
+          <div class="form-group">
+            <label for="frm-recipient">Recipient</label>
+            <input type="email" class="form-control" id="frm-recipient" placeholder="someone@somewhere.com">
+          </div>
+          <div class="form-group">
+            <label for="frm-message">Message (HTML allowed)</label>
+            <textarea class="form-control" rows="10" id="frm-message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Send message</button>
+        </form>
+
+        <p>
+          <pre id="code-block"></pre>
+        </p>
+      </div>
+
+    </div>
+
+    <script src="/assets/jquery/jquery.min.js" charset="utf-8"></script>
+    <script src="/assets/app.js" charset="utf-8"></script>
   </body>
 </html>
