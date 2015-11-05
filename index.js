@@ -19,7 +19,8 @@ app.get('/', function(request, response) {
 });
 
 app.post('/send', function(request, response) {
-  var recipients = request.body.recipients;
+  var recipients = request.body.recipients
+    , message = request.body.message;
 
   recipients.forEach(function(val, index) {
     recipients[index] = { address: val };
@@ -30,7 +31,7 @@ app.post('/send', function(request, response) {
       content: {
         from: 'heroku-node-js-example@sparkpostbox.com',
         subject: 'Heroku Node.js Example',
-        html:'<html><body><p>This is a successfully sent message using the Heroku Node.js example app.</p></body></html>'
+        html: '<html><body>' + message + '</body></html>'
       },
       recipients: recipients
     }
