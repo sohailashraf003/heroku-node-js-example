@@ -4,6 +4,7 @@
   "description": "A Node.js app using the SparkPost Heroku add-on",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "bootstrap": "^3.3.5",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
