@@ -4,13 +4,15 @@
   "description": "A Node.js app using the SparkPost Heroku add-on",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^3.3.5",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "sparkpost": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "rm -rf ./public/bootstrap && cp -r ./node_modules/bootstrap/dist ./public/bootstrap"
   },
   "repository": {
     "type": "git",
