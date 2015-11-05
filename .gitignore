@@ -1,5 +1,5 @@
 .env
-public/bootstrap
+public/assets
 
 # Logs
 logs

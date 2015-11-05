@@ -12,7 +12,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
-    "postinstall": "rm -rf ./public/bootstrap && cp -r ./node_modules/bootstrap/dist ./public/bootstrap"
+    "postinstall": "mkdir -p ./public/assets && rm -rf ./public/assets/bootstrap && cp -r ./node_modules/bootstrap/dist ./public/assets/bootstrap"
   },
   "repository": {
     "type": "git",
