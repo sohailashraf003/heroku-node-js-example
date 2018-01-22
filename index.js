@@ -33,6 +33,9 @@ app.post('/send', function(request, response) {
         subject: 'Heroku Node.js Example',
         html: '<html><body>' + message + '</body></html>'
       },
+      options: {
+        sandbox: true
+      },
       recipients: recipients
     }
   }, function(err, apiResponse) {
